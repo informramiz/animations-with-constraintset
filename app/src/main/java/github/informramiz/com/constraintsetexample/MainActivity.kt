@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     private fun animate() {
         val root = findViewById<ConstraintLayout>(R.id.root_view)
         TransitionManager.beginDelayedTransition(root)
-        val constraintSet = if (!isAnimationApplied) constraintSet1 else constraintSet2
+        val constraintSet = if (!isAnimationApplied) constraintSet2 else constraintSet1
         constraintSet.applyTo(root)
         isAnimationApplied = !isAnimationApplied
     }
